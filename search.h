@@ -5,5 +5,6 @@
 
 std::vector<int> generateOrderedOddData(int size);
 int linearSearch(const std::vector<int>& data, int target);
+int binarySearch(const std::vector<int>& data, int target);
 
 #endif

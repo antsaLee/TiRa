@@ -34,3 +34,23 @@ void runLinearSearching() {
         std::cout << "Value not found.\n";
     }
 }
+
+void runBinarySearching() {
+    int size = 0;
+    std::cout << "Data size: ";
+    std::cin >> size;
+
+    std::vector<int> data = generateOrderedOddData(size);
+
+    int target = 0;
+    std::cout << "Search value: ";
+    std::cin >> target;
+
+    int index = binarySearch(data, target);
+
+    if (index >= 0) {
+        std::cout << "Value found. Element number: " << (index + 1) << "\n";
+    } else {
+        std::cout << "Value not found.\n";
+    }
+}

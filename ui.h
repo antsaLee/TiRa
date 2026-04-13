@@ -3,5 +3,6 @@
 
 void printMenu();
 void runLinearSearching();
+void runBinarySearching();
 
 #endif

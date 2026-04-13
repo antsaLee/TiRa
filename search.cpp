@@ -20,3 +20,23 @@ int linearSearch(const std::vector<int>& data, int target) {
 
     return -1;
 }
+
+int binarySearch(const std::vector<int>& data, int target) {
+    int bottom = 0;
+    int top = static_cast<int>(data.size()) - 1;
+
+    while (bottom <= top) {
+        int mid = (bottom + top) / 2;
+
+        if (data[mid] == target) {
+            return mid;
+        }
+        if (data[mid] < target) {
+            bottom = mid + 1;
+        } else {
+            top = mid - 1;
+        }
+    }
+
+    return -1;
+}
