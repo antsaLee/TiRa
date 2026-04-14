@@ -4,5 +4,6 @@
 void printMenu();
 void runLinearSearching();
 void runBinarySearching();
+void runQuadraticSorting();
 
 #endif

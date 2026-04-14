@@ -14,7 +14,9 @@ int main() {
             runLinearSearching();
         } else if (choice == 2) {
             runBinarySearching();
-        } else if (choice == 3 || choice == 4 || choice == 5) {
+        } else if (choice == 3) {
+            runQuadraticSorting();
+        } else if (choice == 4 || choice == 5) {
             std::cout << "Choice " << choice << " not implemented.\n";
         } else if (choice == 6) {
             break;

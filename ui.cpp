@@ -1,6 +1,7 @@
 #include "ui.h"
 
 #include "search.h"
+#include "sorting.h"
 
 #include <iostream>
 #include <vector>
@@ -53,4 +54,24 @@ void runBinarySearching() {
     } else {
         std::cout << "Value not found.\n";
     }
+}
+
+void runQuadraticSorting() {
+    int size = 0;
+    std::cout << "Data size: ";
+    std::cin >> size;
+
+    std::vector<int> data = generateRandomData(size);
+
+    int shownCount = 0;
+    std::cout << "How many elements are shown from the beginning: ";
+    std::cin >> shownCount;
+
+    std::cout << "Before sorting:\n";
+    printFirstElements(data, shownCount);
+
+    insertionSort(data);
+
+    std::cout << "After sorting:\n";
+    printFirstElements(data, shownCount);
 }
